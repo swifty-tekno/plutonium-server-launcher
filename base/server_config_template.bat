@@ -4,7 +4,7 @@ setlocal EnableDelayedExpansion
 :: CONFIGURATION
 :: ==========================================
 set "GAME=iw5mp"
-set "PLUTO_VERSION=r5338"
+set "PLUTONIUM_VERSION=r5338"
 
 :: Set FORCE_FRESH_COPY to 1 to wipe existing PlutoData\%PLUTO_VERSION% and copy fresh
 set "FORCE_FRESH_COPY=0"
