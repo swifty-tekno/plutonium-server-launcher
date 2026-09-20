@@ -19,15 +19,15 @@ The system is split between a core engine repository (`base/`) and isolated inst
 ```text
 .PlutoniumServers/
 ├── base/
-│   ├── base_game_files/       <-- Put your clean game installation here
-│   ├── plutonium_versions/    <-- Store your downloaded Pluto version folders here
+│   ├── plutonium.exe              # (needs downloading)
+│   ├── base_game_files/           <-- Put your clean game installation here
+│   ├── plutonium_versions/        <-- Store your downloaded Pluto version folders here
 │   ├── server_config_template.bat <-- Copy this to create new servers
-│   ├── start_server_base.bat  <-- The core script handling junctions and launching
-│   ├── DownloadPluto.bat
-│   └── plutonium.exe
+│   ├── start_server_base.bat      <-- The core script handling junctions and launching
+│   └── DownloadPluto.bat
 └── servers/
-    ├── S1/                    <-- Instance 1 folder (auto-generated junctions)
-    └── S2/                    <-- Instance 2 folder (auto-generated junctions)
+    ├── S1/                        <-- Instance 1 folder (auto-generated junctions)
+    └── S2/                        <-- Instance 2 folder (auto-generated junctions)
 ```
 (Note: Your active instance configuration files like !S1.bat can live right alongside your servers folder or anywhere else you prefer to run them from!)
 
@@ -61,6 +61,14 @@ When you copy the template and configure your instance batch file (e.g., `!S1.ba
 * **`SERVER_MODS`**: Space-separated list of specific custom mods to link into this instance (leave blank if running vanilla/base configs).
 
 ---
+
+## 📥 Getting Setup & Downloading Engine Versions
+
+1. Download the official bootstrapper executable (`plutonium.exe`) from the [Plutonium Installation Documentation](https://plutonium.pw/docs/install/) and place it directly inside your `base\` directory.
+2. Double-click the included `DownloadPluto.bat` script.
+3. The script will automatically launch the updater window, download the latest core files into a temporary directory, read the build version metadata, and safely rename the folder to match your standard architecture (e.g., `base\plutonium_versions\r5346`).
+4. If that version already exists on your system, the script will automatically clean up after itself and let you know you're already up to date.
+
 
 ## 🚀 How to Run
 
