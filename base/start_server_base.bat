@@ -347,7 +347,7 @@ cd /D "%LOCAL_PLUTO_DATA%"
 :server
 echo (%date%) - (%time%) Starting %GAME% server [%NAME%]...
 
-start /wait /abovenormal bin\plutonium-bootstrapper-win32.exe iw5mp "%gamepath%" -dedicated +set key %key% +set fs_game %mod% +set sv_config %cfg% +net_port %port% +start_map_rotate
+start /wait /abovenormal bin\plutonium-bootstrapper-win32.exe %GAME% "%LOCAL_GAME_FILES%" -dedicated -appdata "%LOCAL_PLUTO_DATA%" +set key %SERVER_KEY% %MOD_CMDLINE% +set sv_config %CFG% +net_port %PORT% +start_map_rotate
 
 echo (%date%) - (%time%) WARNING: %GAME% server [%NAME%] closed or crashed. Restarting...
 goto server
