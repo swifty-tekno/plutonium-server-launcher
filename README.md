@@ -55,7 +55,7 @@ When you copy the template and configure your instance batch file (e.g., `!S1.ba
 * **`PORT`**: The network port your server instance will bind to (e.g., `27017`).
 * **`PLUTONIUMSERVER`**: The absolute path pointing directly to your root framework directory (e.g., `Y:\.PlutoniumServers`).
 * **`ENABLE_IW4MADMIN`**: Toggle to enable (`1`) or disable (`0`) automatic IW4MAdmin integration.
-* **`IW4MADMIN_DIR`**: Absolute path pointing to your IW4MAdmin installation directory for status validation and auto-launching.
+* **`IW4MADMIN_DIR`**: Absolute path pointing to your IW4MAdmin installation directory for status validation and auto-launching  (e.g., `Y:\.PlutoniumServers\IW4MAdmin`).
 * **`LINK_SERVERDATA_DEBUG` / `LINK_USERMAP_DEBUG` / `LINK_MOD_DEBUG`**: Console debug toggles (`1` to show verbose paths/linking info, `0` to hide).
 * **`SERVER_USERMAPS`**: Controls custom maps linking. Set to `all` to link every map available, or input a space-separated list (e.g., `mp_asylum mp_backlot_sh`).
 * **`SERVER_MODS`**: Space-separated list of specific custom mods to link into this instance (leave blank if running vanilla/base configs).
